@@ -1,0 +1,277 @@
+    * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #ffffff;
+    ;
+    padding: 10px;
+    text-align: center;
+    font-size: 35px;
+    color: #000000;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: bold;
+    background-color: #e42b25;
+    padding: 5px;
+    margin-bottom: 0;
+    text-align: center;
+}
+
+nav a {
+    color: #ffffff;
+    padding: 10px;
+    text-decoration: none;
+}
+
+section {
+    display: -webkit-flex;
+    display: flex;
+}
+
+article {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #eabd82;
+    padding: 10px;
+}
+
+#title {
+    text-align: left;
+}
+
+p {
+    font-size: 17px;
+}
+
+ol li {
+    font-size: 17px;
+}
+
+footer {
+    background-color: #e42b25;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+
+
+/* Clearfix (clear floats) */
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+figcaption {
+    text-align: center;
+    font-size: 18px;
+}
+
+form {
+    text-align: center;
+}
+
+input {
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+}
+
+span {
+    font-size: 30px;
+    color: orange;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-google {
+    background: #dd4b39;
+    color: white;
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-youtube {
+    background: #bb0000;
+    color: white;
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+}
+
+.fa {
+    padding: 5px;
+    font-size: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 3px 2px;
+    border-radius: 20%;
+}
+
+@media (max-width: 600px) {
+    section {
+        -webkit-flex-direction: column;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    body {
+        margin: 0;
+        padding: 0;
+        background-image: none;
+    }
+    #wrapper {
+        width: auto;
+        min-width: 0;
+        margin: 0;
+        box-shadow: none;
+    }
+    h1 {
+        margin: 0;
+    }
+    h2 {
+        margin: 0;
+    }
+    nav {
+        float: none;
+        width: auto;
+        padding: 0.5em;
+    }
+    nav li {
+        display: inline-block;
+    }
+    nav a {
+        padding: 1em;
+    }
+    main {
+        padding: 1em;
+        margin-left: 0;
+        font-size: 90%;
+    }
+    section {
+        margin: 0;
+        padding: 0;
+        background-image: none;
+    }
+    footer {
+        margin: 0;
+    }
+    .container > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+@media only all and (max-width:768px) {
+    h1 {
+        height: 100%;
+        font-size: 1.5em;
+        padding-left: 0.3em;
+    }
+    nav {
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        padding: 0.2em;
+        font-size: 1.3em;
+        border-bottom: 1px;
+        border-bottom-color: #330000;
+    }
+    nav ul {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    nav li {
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    main {
+        padding-top: 0.1em;
+        padding-right: 0.6em;
+        padding-bottom: 0.1em;
+        padding-left: 0.4em;
+    }
+    .svideo {
+        display: block;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+}
+
+
+}
+footer {
+    padding: 0;
+}
+#mobile {
+    display: inline;
+}
+#desktop {
+    display: none;
+}
+
+}
+.right {
+    float: right;
+    max-width: 30%;
+    margin-left: 1em;
+    object-fit: cover;
+}
+figure img {
+    max-width: 100%;
+    height: auto;
+}
+@media screen and (max-width: 500px) {
+    .right {
+        float: none;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    .container > div > img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
